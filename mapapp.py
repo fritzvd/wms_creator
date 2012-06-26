@@ -24,7 +24,7 @@ def folder_display(folder=None):
 	url_for('static', filename='js/bootstrap.min.js')
 	return render_template('filelist.html', filelist=filelist)
 
-@app.route('/wms_creator/wms', methods=['POST', 'GET'])
+@app.route('/wms', methods=['POST', 'GET'])
 def create_wms():
 	error = None
 	if request.method == 'POST':
