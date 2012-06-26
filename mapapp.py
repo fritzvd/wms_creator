@@ -3,7 +3,7 @@ from mapfilecreation import Mapfile
 import glob, os
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/wms_creator')
 def index():
 	return render_template('index.html')
 
