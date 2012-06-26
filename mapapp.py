@@ -3,12 +3,12 @@ from mapfilecreation import Mapfile
 import glob, os
 app = Flask(__name__)
 
-@app.route('/wms_creator')
+@app.route('/wms_creator/')
 def index():
 	return render_template('index.html')
 
-@app.route('/dirs/')
-@app.route('/dirs/<path:folder>')
+@app.route('/wms_creator/dirs/')
+@app.route('/wms_creator/dirs/<path:folder>')
 def folder_display(folder=None):
 	os.chdir('/var/maps/')
 	if folder == None:
