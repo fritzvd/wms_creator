@@ -2,6 +2,7 @@ from flask import Flask, render_template, url_for, request
 from mapfilecreation import Mapfile
 import glob, os
 app = Flask(__name__)
+app.debug = True
 
 @app.route('/')
 def index():
